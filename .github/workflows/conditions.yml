@@ -4,7 +4,7 @@ jobs:
   skip-or-run:
     env:
       ACTOR: ${{ github.actor }}
-    if: ${{ ACTOR == 'ich1zer0' }}
+    if: ${{ env.ACTOR == 'ich1zer0' }}
     runs-on: ubuntu-latest
     steps:
       - run: echo "${ACTOR}"
