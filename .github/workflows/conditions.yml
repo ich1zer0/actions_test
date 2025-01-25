@@ -2,7 +2,7 @@ name: Conditions workflow
 on: workflow_dispatch
 jobs:
   skip-or-run:
-    if: ${{ github.actor == 'ich1_zer0' }}
+    if: ${{ github.actor == 'ich1zer0' }}
     runs-on: ubuntu-latest
     steps:
       - run: echo "${{ github.actor }}"
